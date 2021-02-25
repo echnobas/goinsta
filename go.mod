@@ -1,3 +1,3 @@
-module github.com/echnobas/goinsta/v2
+module github.com/echnobas/goinsta/v3
 
 go 1.12
